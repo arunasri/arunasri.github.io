@@ -1,0 +1,14 @@
+- name: Robot Framework
+  level: 3
+
+- name: Selenium IDE
+  level: 4
+
+- name: Fire Bug
+  level: 4
+
+- name: Git
+  level: 3
+
+- name: Jira
+  level: 4

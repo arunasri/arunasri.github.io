@@ -1,0 +1,74 @@
+<div class="container">
+  <header class="three columns">
+    <img class="me" src="{{ site.baseurl }}assets/images/{{ site.avatar }}" alt="Responsive image">
+    <h1>{{ site.author }}</h1>
+    <p><a href="tel:{{site.mobile_number}}">{{site.mobile_number}}</a></p>
+    <address>
+      <a href="https://www.google.co.uk/maps/place/44+Perth+St,+Edinburgh,+Edinburgh+City+EH3+5BL">
+        {{site.location.address1}}<br>
+        {{site.location.address2}}<br>
+      </a>
+    </address>
+    <p>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+      <a href="https://github.com/trending"><i class="fa fa-github"></i> Github</a> /
+      <a href="https://twitter.com/twitter"><i class="fa fa-twitter"></i> Twitter</a>
+    </p>
+  </header>
+  <div class="thirteen columns clearfix">
+    <section class="thirteen columns">
+      <h1>Employment</h1>
+      {% for job in site.data.jobs  %}
+      <article>
+        <header>
+          <h1>{{job.title}}</h1>
+          <span><address>{{job.location}}</address><time>{{job.time}}</time></span>
+        </header>
+        <p> {{job.description}}</p>
+      </article>
+      {% endfor %}
+    </section>
+    <section class="thirteen columns">
+      <h1>Education</h1>
+      {% for education in site.data.educations  %}
+      <article>
+        <header>
+          <h1>{{education.name}}</h1>
+          <span>{{education.university}}</span>
+          <span><address>{{education.location}}</address><time>{{education.time}}</time></span>
+        </header>
+        <p> {{education.description}}</p>
+      </article>
+      {% endfor %}
+      </article>
+    </section>
+    <section class="thirteen columns">
+      <h1>Programming Skills</h1>
+      <article>
+        <header>
+          <h1>Software engineering &amp; web development</h1>
+        </header>
+        {% for skill in site.data.skills  %}
+        <p>
+          {% for i in (1..skill.level) %}
+          <i class="fa fa-star"></i>
+          {% endfor %}
+          {% for i in (skill.level..5) %}
+          <i class="fa fa-star-o"></i>
+          {% endfor %}
+          &nbsp;&nbsp;<em>{{skill.name}}</em>
+        </p>
+        {% endfor %}
+      </article>
+    </section>
+    <section class="thirteen columns">
+      <h1>Hobbies</h1>
+      <article>
+        <p>{{site.hobbies}}</p>
+      </article>
+    </section>
+    <footer class="thirteen columns">
+      <p>© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
+      </footer>
+    </div>
+  </div>
