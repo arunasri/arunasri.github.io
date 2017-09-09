@@ -4,15 +4,13 @@
     <h1>{{ site.author }}</h1>
     <p><a href="tel:{{site.mobile_number}}">{{site.mobile_number}}</a></p>
     <address>
-      <a href="https://www.google.co.uk/maps/place/44+Perth+St,+Edinburgh,+Edinburgh+City+EH3+5BL">
+      <a href="https://www.google.co.uk/maps/place/Central+Park+by+Pulte+Homes/@35.064722,-80.7771503,17z/data=!3m1!4b1!4m5!3m4!1s0x88569d5aaa021287:0x414b6f2e8cb5a317!8m2!3d35.064722!4d-80.7749563">
         {{site.location.address1}}<br>
         {{site.location.address2}}<br>
       </a>
     </address>
     <p>
       <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
-      <a href="https://github.com/trending"><i class="fa fa-github"></i> Github</a> /
-      <a href="https://twitter.com/twitter"><i class="fa fa-twitter"></i> Twitter</a>
     </p>
   </header>
   <div class="thirteen columns clearfix">
@@ -37,7 +35,6 @@
           <span>{{education.university}}</span>
           <span><address>{{education.location}}</address><time>{{education.time}}</time></span>
         </header>
-        <p> {{education.description}}</p>
       </article>
       {% endfor %}
       </article>

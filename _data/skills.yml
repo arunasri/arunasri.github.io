@@ -1,14 +1,29 @@
-- name: Robot Framework
+- name: Selenium WebDriver
+  level: 4
+
+- name: Eclipse
   level: 3
+
+- name: Java
+  level: 3
+
+- name: Ruby
+  level: 1
 
 - name: Selenium IDE
   level: 4
 
-- name: Fire Bug
+- name: Fire Bug/ Chrome Web Tools
   level: 4
 
 - name: Git
   level: 3
 
 - name: Jira
+  level: 4
+
+- name: TFS
+  level: 4
+
+- name: QC
   level: 4

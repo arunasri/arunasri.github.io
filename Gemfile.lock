@@ -127,9 +127,10 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-gist
   jekyll-paginate
   pygments.rb
   rdiscount
 
 BUNDLED WITH
-   1.10.6
+   1.15.4
